@@ -384,6 +384,11 @@ declare namespace ShopifyBuy {
          * Title of variant.
          */
         variantTitle: string;
+
+        /**
+         * The Variant
+         */
+        variant: ProductVariant;
     }
 
     export interface LineItemToAdd {
@@ -452,6 +457,7 @@ declare namespace ShopifyBuy {
         product_id: string;
         src: string;
         variant_ids: Array<string>;
+        altText: string;
     }
 
     export interface ImageVariant extends Image {
